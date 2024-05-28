@@ -7,7 +7,9 @@
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
     "build": "tsc -p .",
-    "postinstall": "tsc"
+    "postinstall": "tsc",
+    "pm2:start": "pm2 start npm --name 'Rental_service' -- start",
+    "pm2:stop": "pm2 stop Rental_service"
   },
   "keywords": [],
   "author": "",
